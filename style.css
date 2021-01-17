@@ -1,0 +1,184 @@
+html {
+    font-family: "Caveat", Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+    background-color: seashell;
+    opacity: 0.9;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    font-family: "La Belle Aurore";
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4A2389;
+}
+h3 {
+    font-size: 2.25rem;
+    font-family: "Caveat";
+    color: #4A2389;
+    margin: 0;
+}
+h4 {
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+header {
+    position: relative;
+    top: 0;
+    z-index: 1;
+    border-bottom: 1px solid black;
+    height: 350px;
+    width: 100%;
+    align-items: center;
+    color: #4A2389;
+    font-family: "La Belle Aurore";
+    margin: -40px auto;
+    
+    font-size: 2rem;
+
+}
+
+header::after {
+    content: "";
+    background-image: url("images/header_background_sm.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+}
+
+
+nav {
+    text-decoration: underline;
+    text-align: center; 
+    
+}
+
+nav ul {
+    color: seashell;
+    list-style-type: none;
+    display: inline-flex;
+}
+nav ul li {
+    padding: 20px 10px;
+    margin-right: 10px;
+    font-size: 2rem; 
+    font-weight: bold;
+}
+a:link {
+    color: #4A2389;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #495773;
+}
+a:hover {
+    color: seashell;
+}
+a:active {
+    color: #263140;
+}
+
+
+main {
+    position: relative;
+    top: 69px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#mission {
+    height: 700px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/mission_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#mission .content {
+    background-color: seashell;
+    color: black;
+    opacity: .6;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#supports {
+    display: inline-block;
+    width: 1000px;
+}
+
+figure {
+    display: inline-block;
+    width: 305px;
+    margin: 20px 10px;
+}
+
+figure img {
+   
+    width: 300px;  
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#contact {
+    padding-top: 30px;
+    margin-top: 50px;
+    height: 800px;
+    background-image: url("images/contact_med.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#needSupport, #volunteer, #partner {
+    width: 300px;
+    display: inline-block;
+    margin: 0 20px;
+    opacity: 1;
+}
+
+
+footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    padding-left: 20px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 1052px) {
+    main {
+        display: grid;
+    }
+    #mission {
+        width: 100%;
+    }
+    #locations {
+        height: 100%;
+        width: 100%;
+    }
+
+
+    
+    
+}

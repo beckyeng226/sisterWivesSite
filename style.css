@@ -24,6 +24,9 @@ h4 {
     font-size: 1.75rem;
     margin: 0;
 }
+h5 {
+    font-size: 1.5rem;
+}
 
 header {
     position: relative;
@@ -126,18 +129,22 @@ main {
 
 figure {
     display: inline-block;
-    width: 305px;
+    width: 405px;
+    height: 400px;
     margin: 20px 10px;
+    overflow: hidden;
 }
 
 figure img {
    
-    width: 300px;  
+    width: 400px;  
+ 
 }
 
 figcaption {
     text-align: center;
     margin-top: 10px;
+    font-size: 1.75rem;
 }
 
 #contact {

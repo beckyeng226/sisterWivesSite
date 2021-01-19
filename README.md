@@ -15,7 +15,7 @@ The project was developed for the Responsive Club Website Project, part of the F
 - Visual Studio Code
 
 ## View Site
-To view the website live, visit https://beckyeng226.github.io/sisterWivesSite.git
+To view the website live, visit https://beckyeng226.github.io/sisterWivesSite
 
 
 ## Setup

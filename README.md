@@ -22,4 +22,4 @@ To view the website live, visit https://beckyeng226.github.io/sisterWivesSite
 To run this project, download the code and open in a web browser.
 
 ## Status
-The basic requirements of the assignment have been completed.
+Making the header responsive on mobile phones in portrait orientation is still in progress, but the site is responsive to all other screens at this time.

@@ -7,6 +7,10 @@ html {
     text-align: center;
     margin: 0;
 }
+h1 {
+    font-size: 3.5rem;
+    padding-top: 20px;
+}
 
 h2 {
     font-family: "La Belle Aurore";
@@ -32,16 +36,12 @@ header {
     position: relative;
     top: 0;
     z-index: 1;
-    border-bottom: 1px solid black;
     height: 350px;
     width: 100%;
     align-items: center;
     color: #4A2389;
     font-family: "La Belle Aurore";
     margin: -40px auto;
-    
-    font-size: 2rem;
-
 }
 
 header::after {
@@ -58,7 +58,9 @@ header::after {
     z-index: -1; 
 }
 
-
+.topnav {
+    display: none;
+}
 nav {
     text-decoration: underline;
     text-align: center; 
@@ -85,7 +87,7 @@ a:visited {
     color: #495773;
 }
 a:hover {
-    color: seashell;
+    color: #fff5ee;
 }
 a:active {
     color: #263140;
@@ -170,22 +172,75 @@ footer {
     bottom: 0px;
     width: 100%;
     padding-left: 20px;
-    text-align: left;
+    text-align: center;
 }
 
-@media only screen and (max-width: 1052px) {
+@media only screen and (max-width: 1045px) {
     main {
         display: grid;
+        margin: 0 auto;
+        
     }
     #mission {
         width: 100%;
     }
-    #locations {
-        height: 100%;
+    #supports {
         width: 100%;
     }
+    #contact {
+        height: 100%;
+        width: 100%;
+        background-image: none;
+        background-color: #A0A1B1;
+    }
+    #needSupport, #volunteer {
+        border-bottom: 1px solid darkslateblue;
+        padding: 1% 0;
+    }
+    footer {
+        margin-top: 80px;
+    }
+}
 
+@media only screen and (max-width: 1045px) and (min-width: 670px) {
 
-    
+    nav {
+        display: inline-flex;
+    }
+    nav ul li {
+        padding: 5px 10px;
+        margin-right: 10px;
+    }
+    .topnav {
+        display: none;
+    }
+}
+@media only screen and (max-width: 669px) {
+    header::after {
+        background-image: none;
+    }
+    h1 {
+        display: grid;
+        margin: 0 auto;
+        width: 100%;
+        background-color: #A0A1B1;
+    }
+    nav {
+        display: none;
+    }
+    .topnav {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        background-color: #A0A1B1;
+    }
+    .topnav ul {
+        display: inline-flex;
+        list-style-type: none;
+    }
+    .topnav ul li {
+        padding: 5px 10px;
+        font-size: 2rem;
+    }
     
 }

@@ -43,7 +43,8 @@ header {
     font-family: "La Belle Aurore";
     margin: -40px auto;
 }
-
+/*Included to move image "behind" the header so that its opacity can be decreased without impacting the opacity
+of the text, to increase readability*/
 header::after {
     content: "";
     background-image: url("images/header_background_sm.jpg");
@@ -174,7 +175,8 @@ footer {
     padding-left: 20px;
     text-align: center;
 }
-
+/*Responsive for smaller screens, removes background image for contact section, makes supports images
+into a single column, and contact boxes will decrease to 2 across and then into 1 column as screen size varies*/
 @media only screen and (max-width: 1045px) {
     main {
         display: grid;
@@ -203,7 +205,6 @@ footer {
 }
 
 @media only screen and (max-width: 1045px) and (min-width: 670px) {
-
     nav {
         display: inline-flex;
     }
@@ -211,10 +212,9 @@ footer {
         padding: 5px 10px;
         margin-right: 10px;
     }
-    .topnav {
-        display: none;
-    }
 }
+/*For mobile phone sized screens the nav menu is replaced with the topnav, which uses shortened names, 
+the background image is removed from the header*/
 @media only screen and (max-width: 669px) {
     header::after {
         background-image: none;
